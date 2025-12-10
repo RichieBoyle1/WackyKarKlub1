@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchandise - Wacky Kar Klub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top" data-page="merchandise">
+
+<header>
+    <h1>Wacky Kar Klub</h1>
+    <p>A Community for Car Lovers across Ireland</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="merchandise.html">Merchandise</a></li>
+        <li><a href="news.html">News & Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section class="merchandise">
+        <h2>Club Merchandise</h2>
+        <p>Browse our collection of exclusive Wacky Kar Klub memorabilia:</p>
+        <ul>
+        </ul>
+ 
+    </section>
+
+  <main id="main" class="container">
+        <h2> Shop our online Memomoribilia</h2>
+
+        <form id="product-filter" class="filters">
+            <label for="filter-Merchandise">Merchandise</label>
+            <select name="merchandise" id="filter-Merchandise">
+                <option value=""> All</option>
+                <option value="Badges"> Badges</option>
+                <option value="Wheel-Trims"> Wheel-Trims</option>
+                <option value="Hoodies"> Hoodies</option>
+                <option value="Car-Mats"> Car Mats</option>
+            </select>
+            <button type="button" id="product-clear"> Clear</button>
+        </form>
+
+        <section id="product-grid" class="grid">
+            <div class="card" data-merchandise="Badges">
+                <img src="Assets/FordBadge.jpg" width="160" height="160">
+                <h3>Ford Badge</h3>
+                <p>Full ford display badge £25</p>
+
+            </div>
+
+            <div class="card" data-merchandise="Badges">
+                <img src="Assets/MercBadge.jpg" width="160" height="160">
+                <h3>Mercedes Badge</h3>
+                <p>Full Mercedes display badge £35</p>
+
+            </div>
+
+            <div class="card" data-merchandise="Badges">
+                <img src="Assets/VolkswagonBadge.jpg" width="160" height="160">
+                <h3>Volkswagen Badge</h3>
+                <p>Full Volkswagen display badge £30</p>
+            </div>
+
+            <div class="card" data-merchandise="Wheel-Trims">
+                <img src="Assets/BlackMultiTrim.jpg" width="160" height="160">
+                <h3>Black Multi Wheel-Trims</h3>
+                <p>Black Multi Wheel-Trims universal fit £40</p>
+            </div>
+
+            <div class="card" data-merchandise="Wheel-Trims">
+                <img src="Assets/FordTrim.jpg" width="160" height="160">
+                <h3>Ford Wheel-Trims</h3>
+                <p>Original Ford Wheel-trim - universal fit £50</p>
+            </div>
+
+            <div class="card" data-merchandise="Wheel-Trims">
+                <img src="Assets/SilverTrim.jpg" width="160" height="160">
+                <h3>Silver Wheel-Trims</h3>
+                <p>Basic Silver Wheel-Trims - universal fit £40</p>
+            </div>
+
+            <div class="card" data-merchandise="Hoodies">
+                <img src="Assets/FordHoody.jpg" width="160" height="160">
+                <h3>Ford Hoodies</h3>
+                <p>Original Ford Hoody - All sizes available £60</p>
+            </div>
+
+            <div class="card" data-merchandise="Hoodies">
+                <img src="Assets/MercHoody.jpg" width="160" height="160">
+                <h3>Mercedes Hoodies</h3>
+                <p>Original Mercedes Hoody - All sizes available £60</p>
+            </div>
+
+
+            <div class="card" data-merchandise="Hoodies">
+                <img src="Assets/VolkswaganHoody.jpg" width="160" height="160">
+                <h3>Volkswagan Hoodies</h3>
+                <p>Original Volkswagan Hoody - All sizes available £60</p>
+            </div>
+
+
+            <div class="card" data-merchandise="Car-Mats">
+                <img src="Assets/CarpetCarMats.jpg" width="160" height="160">
+                <h3>Carpet Mats</h3>
+                <p>Full set of Carpet car mats - Universal fit £50</p>
+            </div>
+
+            <div class="card" data-merchandise="Car-Mats">
+                <img src="Assets/Full blue mats.jpg" width="160" height="160">
+                <h3>Full Blue Mats</h3>
+                <p>Full set of Blue Carpet car mats - Universal fit £50</p>
+            </div>
+
+            <div class="card" data-merchandise="Car-Mats">
+                <img src="Assets/Fullrubbermats.jpg" width="160" height="160">
+                <h3>Full rubber Mats</h3>
+                <p>Full set of Rubber car mats - Universal fit £50</p>
+            </div>
+
+
+
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Wacky Kar Klub</p>
+         <p><a href="#top">Back To Top</a></p>
+    </footer>
+<script src="app.js" defer></script>
+</body>
+
+</html>

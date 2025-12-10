@@ -1,0 +1,462 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* HEADER STYLES */
+header {
+    background: #1c1c1c;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/*  NAVIGATION BAR */
+nav {
+    background: #ff4b2b;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background: #fff;
+    color: #ff4b2b;
+    border-radius: 5px;
+}
+
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+}
+
+/* HIGHLIGHT SECTION  */
+.highlight {
+    background: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.highlight h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff4b2b;
+}
+
+.highlight ul {
+    list-style: none;
+}
+
+.highlight ul li {
+    font-size: 1.1rem;
+    padding: 10px 0;
+    position: relative;
+}
+
+.highlight ul li::before {
+    content: "✓";
+    color: #ff4b2b;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* HERO SECTION  */
+.home-hero {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+@media(max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+
+.home-hero {
+    position: relative;
+    text-align: center;
+    height: 200px; 
+    background-image: url('WackyKarClubRichie.png');
+    background-size: contain;  
+    background-position: center center; 
+    background-color: #000; 
+}
+
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    padding: 20px 40px;
+    border-radius: 10px;
+    max-width: 90%;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+}
+
+
+/* PRODUCT GRID LAYOUT */
+#product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+}
+
+/* CARD STYLING */
+.card {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;   
+    border-radius: 8px;
+    background: #fff;
+}
+
+/* IMAGE BORDER */
+.card img {
+    border: 2px solid #333;   
+    padding: 5px;             
+    border-radius: 6px;
+    background: #f5f5f5;
+}
+
+/* hover effect  */
+.card:hover {
+    transform: translateY(-3px);
+    transition: 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+.card[style*="display: none"] {
+    opacity: 0;
+}
+
+
+/* SERVICES SECTION */
+.services h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* SERVICES LIST */
+.services ul {
+    list-style: none;
+    display: grid;
+    justify-items: center; 
+    gap: 20px;
+}
+
+/* EACH SERVICE AS A CENTERED BOX */
+.services li {
+    background: white;
+    padding: 20px 25px;
+    border-radius: 10px;
+    border: 2px solid #222;
+    text-align: center;
+    font-size: 1.1rem;
+    width: 70%;                  
+    max-width: 400px;            
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+/* SERVICE TITLE */
+.services li strong {
+    display: block;
+    font-size: 1.3rem;
+    color: #333;              
+    margin-bottom: 8px;
+}
+
+/* CLEAN HOVER EFFECT */
+.services li:hover {
+    background: #f0f0f0;        
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+
+
+/* ABOUT SECTION */
+.about {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.05);
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.about p {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+/* SUB HEADING */
+.about h3 {
+    font-size: 1.4rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* VALUES LIST */
+.about ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.about ul li {
+    margin-bottom: 8px;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* MOBILE ADJUSTMENTS */
+@media (max-width: 600px) {
+    main {
+        margin: 20px auto;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    nav ul li a {
+        padding: 12px;
+    }
+
+    .about {
+        padding: 20px;
+    }
+}
+
+/* NEWS & EVENTS SECTION */
+.news h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* Container for boxes */
+.news {
+    display: grid;
+    justify-items: center;
+}
+
+/* Making each event look like a box */
+.news article {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 2px solid #222;
+    text-align: center;
+    width: 70%;
+    max-width: 450px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.25s ease-in-out;
+}
+
+/* EVENT TITLE */
+.news h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+
+.news article:hover {
+    background: #f0f0f0;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.merchandise {
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 0;
+    text-align: center;
+}
+
+.merchandise h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.75rem;
+    color: #222;
+}
+
+.merchandise p {
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+/* REVIEWS SECTION */
+.reviews {
+    margin-top: 15px;
+    text-align: left;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.reviews h4 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Review section*/
+.review {
+    background: #fafafa;
+    border-left: 4px solid #222;
+    padding: 10px 12px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.review strong {
+    display: block;
+    font-size: 0.95rem;
+}
+
+.review span {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.review p {
+    font-size: 0.95rem;
+    margin-top: 5px;
+}
+
+/* About Section photos */
+
+.event-images {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.event-images h3 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: #222;
+}
+
+.event-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+.event-gallery img {
+    width: 200px;  
+    height: auto;
+    border: 2px solid #333;  
+    border-radius: 4px;
+    padding: 4px; 
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
